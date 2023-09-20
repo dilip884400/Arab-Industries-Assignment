@@ -1,4 +1,4 @@
-Deployment Link:- https://arab-industries-assignment.vercel.app/
+Deployment Link:- https://arab-industries-assignment-ex5e8m5yz-dilip884400.vercel.app/
 
 #To run project on your local machine, you can follow these steps:
 
