@@ -16,10 +16,13 @@
             margin: 0 auto;
         }
 
+
         /* Profile name */
         .profile-name {
             font-weight: bold;
             margin-top: 10px;
         }
 
-        
+#sidebar{
+    background-color: #fff;
+}

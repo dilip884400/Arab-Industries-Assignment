@@ -2,12 +2,14 @@ import React from 'react'
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line }
     from 'recharts';
 import { CgProfile } from 'react-icons/cg'
+import { BsCheckAll } from 'react-icons/bs'
 import { AiOutlineCloudUpload, AiOutlineMessage } from 'react-icons/ai'
 
 
 import styles from './Home.module.css'
 
 function Home() {
+
 
     const data = [
         {
@@ -57,7 +59,20 @@ function Home() {
 
     return (
         <main className='main-container'>
-            
+            <div className={styles['heading-home']}>
+            <h2 >Choose a plan that's just right for you!</h2>
+                <div className={styles.btnContainer}>
+                    <label className={`${styles.switch} ${styles.btnColorModeSwitch}`}>
+                        <input value="1" id="color_mode" name="color_mode" type="checkbox" />
+                        <label
+                            className={styles.btnColorModeSwitchInner}
+                            data-off="Montly"
+                            data-on="Anually"
+                            htmlFor="color_mode"
+                        ></label>
+                    </label>
+                </div>
+        </div>
             <div className={styles['pricing-cards-container']}>
                 {/* Pricing Card 1: Basic Plan */}
                 <div className={styles['pricing-card']}>
@@ -143,25 +158,25 @@ function Home() {
                         <button style={{ borderRadius: "8px", border: "none", width: "40%", padding: "6px", backgroundColor: "lightgreen" }} className={`${styles['pricing-button']} ${styles['orange-button']}`}>
                             Top Button
                         </button>
-                        <h2 className={styles['pricing-title-bold']}>Plan 1</h2>
-                        <button style={{ borderRadius: "8px", border: "none", width: "40%", padding: "12px", backgroundColor: "lightgreen" }} className={`${styles['pricing-button']} ${styles['big-button']}`}>
+                        <h2 className={styles['pricing-title-bold']}>Free Starter</h2>
+                        <button style={{ borderRadius: "8px", border: "none", width: "60%", padding: "15px", backgroundColor: "lightgreen" }} className={`${styles['pricing-button']} ${styles['big-button']}`}>
                             Get Started
                         </button>
                     </div>
                     <div className={styles['right-side']}>
-                        <span className={styles['span-text']}>Some Text Here</span>
+                        <span className={styles['span-text']}>What you'll get</span>
                         <div className={styles['feature-list']}>
                             <div className={styles['feature-item']}>
                                 <CgProfile className={styles['feature-icon']} />
-                                <h4>Feature 1</h4>
+                                <h4>upto 8 user</h4>
                             </div>
                             <div className={styles['feature-item']}>
                                 <AiOutlineCloudUpload className={styles['feature-icon']} />
-                                <h4>Feature 2</h4>
+                                <h4>3 GB Storage</h4>
                             </div>
                             <div className={styles['feature-item']}>
                                 <AiOutlineMessage className={styles['feature-icon']} />
-                                <h4>Feature 3</h4>
+                                <h4>Email Support</h4>
                             </div>
                         </div>
                     </div>
@@ -170,28 +185,24 @@ function Home() {
                 {/* Pricing Card 2: Horizontal Plan 2 */}
                 <div className={styles['pricing-card-horizontal']}>
                     <div className={styles['left-side']}>
-                        <button style={{ borderRadius: "8px", border: "none", width: "40%", padding: "6px", backgroundColor: "lightgreen" }} className={`${styles['pricing-button']} ${styles['orange-button']}`}>
-                            Top Button
+                        <button style={{ borderRadius: "8px", border: "none", width: "40%", padding: "6px", backgroundColor: "lightblue" }} className={`${styles['pricing-button']} ${styles['orange-button']}`}>
+                            Let's Connect
                         </button>
-                        <h2 className={styles['pricing-title-bold']}>Plan 1</h2>
-                        <button style={{ borderRadius: "8px", border: "none", width: "40%", padding: "12px", backgroundColor: "lightgreen" }} className={`${styles['pricing-button']} ${styles['big-button']}`}>
-                            Get Started
+                        <h2 className={styles['pricing-title-bold']}>Enterprise Plan</h2>
+                        <button style={{ borderRadius: "8px", border: "none", width: "60%", padding: "15px", backgroundColor: "lightblue" }} className={`${styles['pricing-button']} ${styles['big-button']}`}>
+                            Contact Us
                         </button>
                     </div>
                     <div className={styles['right-side']}>
-                        <span className={styles['span-text']}>More Text Here</span>
+                        <span className={styles['span-text']}>What you'll get</span>
                         <div className={styles['feature-list']}>
                             <div className={styles['feature-item']}>
                                 <CgProfile className={styles['feature-icon']} />
-                                <h4>Feature 1</h4>
+                                <h4>Upto 75 Users</h4>
                             </div>
                             <div className={styles['feature-item']}>
-                                <AiOutlineCloudUpload className={styles['feature-icon']} />
-                                <h4>Feature 2</h4>
-                            </div>
-                            <div className={styles['feature-item']}>
-                                <AiOutlineMessage className={styles['feature-icon']} />
-                                <h4>Feature 3</h4>
+                                <BsCheckAll className={styles['feature-icon']} />
+                                <h4>Customization of all other features</h4>
                             </div>
                         </div>
                     </div>
