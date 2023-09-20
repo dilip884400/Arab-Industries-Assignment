@@ -202,7 +202,7 @@ function Home() {
                             </div>
                             <div className={styles['feature-item']}>
                                 <BsCheckAll className={styles['feature-icon']} />
-                                <h4>Customization of all other features</h4>
+                                <h4>Customization of other features</h4>
                             </div>
                         </div>
                     </div>

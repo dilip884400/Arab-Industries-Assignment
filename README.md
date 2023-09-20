@@ -1,3 +1,5 @@
+Deployment Link:- https://arab-industries-assignment.vercel.app/
+
 #To run project on your local machine, you can follow these steps:
 
 ##Clone the Repository: Go to the GitHub repository page of the project you want to run. Look for the "Code" button and click on it. You'll find a URL that you can copy to clone the repository. Open your terminal or command prompt, navigate to the directory where you want to store the project, and run the following command:
